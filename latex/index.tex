@@ -1,0 +1,59 @@
+\begin{DoxyParagraph}{Problem Definition\-:}
+$\ast$\-Implement Prim's M\-S\-T algorithm using heaps. Your program must take two le names as inputs from the user. The input le will contain several test cases delimited by a \$. Each test case is an edge-\/weighted graph (on the vertex set f1; 2; \-: \-: \-: ; ng) formatted as follows. The rst line contains 2 integers n and m denoting the number of vertices and edges, respectively, in the graph. The next m lines represent the adjacency information. Each such line contains 3 integers i, j and wij that are interpreted as fi; j g being an edge of weight wij in the graph. The last line of input le contains a \$\$ to indicate end of all test cases. The output le should contain the list of edges of the M\-S\-T (with associated cost) for each graph in the input. Note that the input graphs could be disconnected and in that case, no spanning tree exists.
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Algorithm\-:}
+
+\begin{DoxyItemize}
+\item M\-S\-T-\/\-P\-R\-I\-M(G,w,r)
+\begin{DoxyItemize}
+\item for each u ∈\-V\mbox{[}G\mbox{]}
+\item do key\mbox{[}u\mbox{]} ← ∞
+\item --π\mbox{[}u\mbox{]}← N\-I\-L
+\item --key\mbox{[}r\mbox{]} ← 0
+\item Q ← V \mbox{[}G\mbox{]}
+\item while(q is not empty)
+\item --do u ← E\-X\-T\-R\-A\-C\-T-\/\-M\-I\-N(Q)
+\item --for each v∈\-Adj\mbox{[}u\mbox{]}
+\item -\/---do if v∈\-Q and w(u,v) $<$key\mbox{[}v\mbox{]}
+\item -\/-\/-\/---then π\mbox{[}v\mbox{]}←u
+\item -\/-\/-\/---key\mbox{[}v\mbox{]}← w (u,v)
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyParagraph}
+O(\-Elog\-V)
+
+\begin{DoxyParagraph}{Format of contents in a input file\-:}
+
+\begin{DoxyItemize}
+\item 7 10
+\item 1 2 1
+\item 1 4 10
+\item 1 6 3
+\item 1 5 5
+\item 2 3 2
+\item 3 4 9
+\item 3 7 6
+\item 4 6 8
+\item 5 6 7
+\item 5 7 4
+\item \$\$
+\end{DoxyItemize}
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Format of contents of expected output for the above input file\-:}
+
+\begin{DoxyItemize}
+\item edge 1,2 1
+\item edge 2,3 2
+\item edge 1,6 3
+\item edge 1,5 5
+\item edge 5,7 4
+\item edge 6,4 8
+\item \$\$
+\end{DoxyItemize}
+\end{DoxyParagraph}
+\begin{DoxyAuthor}{Author}
+Nitesh Bhargava 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+6/11/12 
+\end{DoxyDate}

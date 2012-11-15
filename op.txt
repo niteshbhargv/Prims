@@ -1,0 +1,28 @@
+edge 1,2	1
+edge 2,3	2
+edge 1,6	3
+edge 1,5	5
+edge 5,7	4
+edge 6,4	8
+$
+edge 1,2	1
+edge 1,4	1
+edge 2,3	2
+edge 1,6	3
+edge 6,5	2
+edge 5,7	4
+$
+edge 1,2	5
+edge 2,3	11
+edge 3,12	7
+edge 12,13	3
+edge 3,4	7
+edge 4,8	1
+edge 8,11	8
+edge 8,9	9
+edge 9,10	2
+edge 4,5	10
+edge 5,7	30
+edge 5,6	40
+edge 12,14	92
+$$

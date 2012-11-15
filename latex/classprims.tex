@@ -1,0 +1,93 @@
+\hypertarget{classprims}{\section{prims Class Reference}
+\label{classprims}\index{prims@{prims}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classprims_ad65c9ff691f5c147aee1c2278090092a}{init} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classprims_ad65c9ff691f5c147aee1c2278090092a}{\index{prims@{prims}!init@{init}}
+\index{init@{init}!prims@{prims}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void prims\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classprims_ad65c9ff691f5c147aee1c2278090092a}
+init for every iteration of the input
+
+\begin{DoxyParagraph}{Algorithm\-:}
+
+\begin{DoxyItemize}
+\item M\-S\-T-\/\-P\-R\-I\-M(G,w,r) -\/for each u ∈\-V\mbox{[}G\mbox{]} -\/do key\mbox{[}u\mbox{]} ← ∞
+\begin{DoxyItemize}
+\item π\mbox{[}u\mbox{]}← N\-I\-L
+\begin{DoxyItemize}
+\item key\mbox{[}r\mbox{]} ← 0 -\/\-Q ← V \mbox{[}G\mbox{]} -\/while(q is not empty)
+\item do u ← E\-X\-T\-R\-A\-C\-T-\/\-M\-I\-N(Q)
+\item foreachv∈\-Adj\mbox{[}u\mbox{]}
+\item do ifv∈\-Qandw(u,v) $<$key\mbox{[}v\mbox{]}
+\item thenπ\mbox{[}v\mbox{]}←u
+\item key\mbox{[}v\mbox{]}←w(u,v)
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyParagraph}
+O(\-Elog\-V) input number of vertices
+
+input number of edges
+
+array of vetex structure
+
+array to maintain whether node is visited
+
+adjacency matrix
+
+initializing adjacency matrix to zero and all vertices to not visited
+
+input edges from m to n with edge weight edgewght
+
+filling adjacency matrix
+
+adjacency matrix is symmetric
+
+inserting the information of all vertices of graph into 'arr' array
+
+value of that node
+
+max possible value (positive infinity)
+
+setting all parent to -\/1 means they have no parent ryt now
+
+1 node is our starting point of mst
+
+initialing vector called 'vertex\-Set' ---$>$ we will use this vector to create min heap containing vertices
+
+inserting values in vector\-Set
+
+using in buld heap from standard template library $<$algorithm$>$
+
+get the min element of the heap
+
+visit that vertex
+
+remove that vertex
+
+same as above
+
+loop for all adjacent vertices of the temp vertex
+
+condition that vertex adjacent to temp and is in Q and w(u,temp) $<$ key\mbox{[}v\mbox{]}
+
+set values of parent
+
+setting the key
+
+heapify after removing the element 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{prims_8h}{prims.\-h}\item 
+\hyperlink{prims_8cpp}{prims.\-cpp}\end{DoxyCompactItemize}

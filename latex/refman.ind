@@ -1,0 +1,31 @@
+\begin{theindex}
+
+  \item {init}
+    \subitem {prims}, \hyperpage{7}
+
+  \indexspace
+
+  \item {key\discretionary {-}{}{}Comparison}, \hyperpage{7}
+    \subitem {operator()}, \hyperpage{7}
+
+  \indexspace
+
+  \item {main.\discretionary {-}{}{}cpp}, \hyperpage{11}
+
+  \indexspace
+
+  \item {operator()}
+    \subitem {key\discretionary {-}{}{}Comparison}, \hyperpage{7}
+
+  \indexspace
+
+  \item {prims}, \hyperpage{7}
+    \subitem {init}, \hyperpage{7}
+  \item {prims.\discretionary {-}{}{}cpp}, \hyperpage{11}
+  \item {prims.\discretionary {-}{}{}h}, \hyperpage{12}
+
+  \indexspace
+
+  \item {vertex}, \hyperpage{8}
+
+\end{theindex}
